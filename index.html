@@ -3,548 +3,143 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Privacy Policy for Ireland Visa Application Status Checker – a free, client-side tool that checks Irish visa decisions published by Irish embassies." />
-  <title>Privacy Policy – Ireland Visa Application Status Checker</title>
+  <title>Privacy Policy — Ireland Visa Checker</title>
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background: #f5f7fa;
-      color: #1a1a2e;
-      line-height: 1.75;
-      font-size: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.7;
     }
-
     header {
-      background: linear-gradient(135deg, #169b62 0%, #0d6e43 100%);
-      color: #fff;
-      padding: 52px 24px 44px;
+      background: #169B62;
+      color: white;
+      padding: 32px 24px;
       text-align: center;
     }
-
-    header .flag { font-size: 2.6rem; margin-bottom: 14px; display: block; }
-
-    header h1 {
-      font-size: 1.85rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 8px;
-    }
-
-    header .subtitle {
-      font-size: 0.95rem;
-      opacity: 0.88;
-      margin-top: 4px;
-    }
-
-    header .effective {
-      display: inline-block;
-      margin-top: 14px;
-      background: rgba(255,255,255,0.18);
-      border-radius: 20px;
-      padding: 4px 16px;
-      font-size: 0.85rem;
-      font-weight: 600;
-    }
-
+    header h1 { font-size: 1.8rem; margin-bottom: 4px; }
+    header p  { font-size: 0.95rem; opacity: 0.85; }
     main {
-      max-width: 780px;
-      margin: 48px auto;
-      padding: 0 20px 80px;
+      max-width: 760px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 12px;
+      padding: 40px 48px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
     }
-
-    .card {
-      background: #fff;
-      border-radius: 14px;
-      box-shadow: 0 2px 14px rgba(0,0,0,0.07);
-      padding: 32px 36px;
-      margin-bottom: 20px;
-    }
-
     h2 {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: #169b62;
-      margin-bottom: 14px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid #e8f5ee;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      font-size: 1.15rem;
+      color: #169B62;
+      margin: 32px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #e8f5ef;
     }
-
-    h2 .icon { font-size: 1.1rem; }
-
-    p { margin-bottom: 12px; }
-    p:last-child { margin-bottom: 0; }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 8px 0 12px;
-    }
-
-    ul li {
-      padding: 5px 0 5px 24px;
-      position: relative;
-    }
-
-    ul li::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      color: #169b62;
-      font-weight: 700;
-    }
-
-    ul.plain li::before { content: "•"; color: #555; font-weight: 400; }
-
-    a { color: #169b62; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    .callout {
-      background: #e8f5ee;
-      border-left: 4px solid #169b62;
-      padding: 14px 18px;
-      border-radius: 0 10px 10px 0;
-      margin: 14px 0;
-      font-size: 0.94rem;
-    }
-
-    .callout.warning {
-      background: #fff8e1;
-      border-left-color: #f59e0b;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.92rem;
-      margin: 12px 0;
-    }
-
-    th, td {
-      text-align: left;
-      padding: 10px 14px;
-      border: 1px solid #e2e8f0;
-    }
-
-    th {
-      background: #f0faf5;
-      font-weight: 600;
-      color: #0d6e43;
-    }
-
-    tr:nth-child(even) td { background: #fafafa; }
-
-    .toc {
-      background: #f0faf5;
-      border-radius: 10px;
-      padding: 20px 28px;
+    h2:first-child { margin-top: 0; }
+    p, li { font-size: 0.97rem; margin-bottom: 8px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .updated {
+      font-size: 0.85rem;
+      color: #888;
       margin-bottom: 28px;
     }
-
-    .toc h3 {
-      font-size: 0.88rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: #0d6e43;
-      margin-bottom: 10px;
-    }
-
-    .toc ol {
-      padding-left: 20px;
-      font-size: 0.92rem;
-    }
-
-    .toc li { margin: 4px 0; }
-
     footer {
       text-align: center;
-      font-size: 0.82rem;
-      color: #888;
       padding: 24px;
-      border-top: 1px solid #e2e8f0;
-      margin-top: 16px;
+      font-size: 0.85rem;
+      color: #999;
     }
-
-    @media (max-width: 600px) {
-      .card { padding: 22px 18px; }
-      header h1 { font-size: 1.4rem; }
-    }
+    a { color: #169B62; }
   </style>
 </head>
 <body>
 
 <header>
-  <span class="flag">🇮🇪</span>
-  <h1>Privacy Policy</h1>
-  <p class="subtitle">Ireland Visa Application Status Checker</p>
-  <span class="effective">Effective Date: 10 May 2025</span>
+  <h1>Ireland Visa Checker</h1>
+  <p>Privacy Policy</p>
 </header>
 
 <main>
+  <p class="updated">Last updated: 8 May 2026</p>
 
-  <nav class="toc" aria-label="Table of contents">
-    <h3>Contents</h3>
-    <ol>
-      <li><a href="#overview">Overview &amp; Summary</a></li>
-      <li><a href="#app-description">About This Application</a></li>
-      <li><a href="#data-we-access">Data We Access</a></li>
-      <li><a href="#data-we-collect">Data We Do Not Collect</a></li>
-      <li><a href="#user-input">How User Input Is Handled</a></li>
-      <li><a href="#file-upload">Optional File Uploads</a></li>
-      <li><a href="#hosting">Hosting &amp; Infrastructure</a></li>
-      <li><a href="#third-party">Third-Party Services</a></li>
-      <li><a href="#cookies">Cookies &amp; Tracking</a></li>
-      <li><a href="#your-rights">Your Rights</a></li>
-      <li><a href="#children">Children's Privacy</a></li>
-      <li><a href="#data-security">Data Security</a></li>
-      <li><a href="#changes">Changes to This Policy</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-    </ol>
-  </nav>
+  <h2>1. Overview</h2>
+  <p>
+    Ireland Visa Checker ("the App") is developed and maintained by Shayshank Rathore
+    ("we", "us", "our"). This Privacy Policy explains what information the App
+    collects, how it is used, and your rights in relation to it.
+  </p>
+  <p>
+    By using the App you agree to the practices described in this policy.
+  </p>
 
-  <!-- 1. Overview -->
-  <div class="card" id="overview">
-    <h2><span class="icon">📋</span> 1. Overview &amp; Summary</h2>
-    <div class="callout">
-      <strong>Short version:</strong> This app does not collect, store, or transmit any personal data about you. The application number you search is never sent to any server we operate or own. There are no accounts, no cookies, no analytics, and no advertising.
-    </div>
-    <p>
-      This Privacy Policy explains in detail how the <strong>Ireland Visa Application Status Checker</strong>
-      ("the App", "we", "our") handles information when you use the application. We are committed
-      to protecting your privacy and being fully transparent about our data practices.
-    </p>
-  </div>
+  <h2>2. Information We Collect</h2>
+  <p>The App collects <strong>no personal information</strong>. Specifically:</p>
+  <ul>
+    <li>We do <strong>not</strong> require you to create an account or log in.</li>
+    <li>We do <strong>not</strong> ask for your name, email address, phone number, or any other identifying details.</li>
+    <li>We do <strong>not</strong> collect or store the application numbers you enter.</li>
+    <li>We do <strong>not</strong> use advertising SDKs or analytics trackers.</li>
+  </ul>
 
-  <!-- 2. App Description -->
-  <div class="card" id="app-description">
-    <h2><span class="icon">🛂</span> 2. About This Application</h2>
-    <p>
-      The Ireland Visa Application Status Checker is a free, open-source tool that helps visa
-      applicants check the status of their Irish visa application. The app fetches publicly
-      available visa decision data published by Irish embassies and allows users to search for
-      their application number without leaving their browser.
-    </p>
-    <p>The app currently supports visa decisions published by the following Irish embassies and visa offices:</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Visa Office</th>
-          <th>Official Data Source</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Abu Dhabi (UAE)</td>
-          <td><a href="https://www.ireland.ie/en/uae/abudhabi/services/visas/weekly-decision-reports/" target="_blank" rel="noopener noreferrer">ireland.ie – Abu Dhabi weekly decision reports</a></td>
-        </tr>
-        <tr>
-          <td>Abuja (Nigeria)</td>
-          <td><a href="https://www.ireland.ie/en/nigeria/abuja/services/visas/weekly-decision-reports/" target="_blank" rel="noopener noreferrer">ireland.ie – Abuja weekly decision reports</a></td>
-        </tr>
-        <tr>
-          <td>Ankara (Türkiye)</td>
-          <td><a href="https://www.ireland.ie/en/turkiye/ankara/services/visas/weekly-decision-report/" target="_blank" rel="noopener noreferrer">ireland.ie – Ankara weekly decision report</a></td>
-        </tr>
-        <tr>
-          <td>Beijing (China)</td>
-          <td><a href="https://www.ireland.ie/en/china/beijing/services/visas/visa-decisions/" target="_blank" rel="noopener noreferrer">ireland.ie – Beijing visa decisions</a></td>
-        </tr>
-        <tr>
-          <td>London (Great Britain)</td>
-          <td><a href="https://www.ireland.ie/en/greatbritain/london/visas/visa-processing-times-and-weekly-decision-reports/" target="_blank" rel="noopener noreferrer">ireland.ie – London visa processing times &amp; decision reports</a></td>
-        </tr>
-        <tr>
-          <td>Moscow (Russia)</td>
-          <td><a href="https://www.ireland.ie/en/moscow/services/visas/visas-for-ireland/" target="_blank" rel="noopener noreferrer">ireland.ie – Moscow visas for Ireland</a></td>
-        </tr>
-        <tr>
-          <td>New Delhi (India)</td>
-          <td><a href="https://www.ireland.ie/en/india/newdelhi/services/visas/processing-times-and-decisions/" target="_blank" rel="noopener noreferrer">ireland.ie – New Delhi processing times &amp; decisions</a></td>
-        </tr>
-        <tr>
-          <td>South Africa</td>
-          <td><a href="https://www.irishimmigration.ie/south-africa-visa-desk/" target="_blank" rel="noopener noreferrer">irishimmigration.ie – South Africa visa desk</a></td>
-        </tr>
-        <tr>
-          <td>General (all offices)</td>
-          <td><a href="https://www.irishimmigration.ie/visa-decisions/" target="_blank" rel="noopener noreferrer">irishimmigration.ie – Visa decisions</a></td>
-        </tr>
-      </tbody>
-    </table>
-    <p>
-      All data sourced by this application is owned and published by the Irish Government
-      or Irish Immigration Service. This policy covers all current and future embassy or
-      visa office pages supported within the application. We are not affiliated with,
-      endorsed by, or connected to the Irish Government, the Department of Foreign Affairs
-      Ireland, Irish Immigration Service, or any Irish Embassy or Consulate.
-    </p>
-  </div>
+  <h2>3. How the App Works</h2>
+  <p>
+    When you enter an application number, it is sent over an encrypted HTTPS connection
+    to our backend server solely to query official Irish Embassy decision records
+    published on <a href="https://www.ireland.ie" target="_blank">ireland.ie</a>.
+    The number is used only to perform this lookup and is not logged, stored, or shared.
+  </p>
+  <p>
+    The backend server fetches publicly available data directly from the Irish
+    Government website. We do not modify or interpret this data beyond formatting
+    it for display in the App.
+  </p>
 
-  <!-- 3. Data We Access -->
-  <div class="card" id="data-we-access">
-    <h2><span class="icon">📂</span> 3. Data We Access (Public Government Data)</h2>
-    <p>
-      The app retrieves visa decision data that is <strong>publicly published</strong> by the
-      Irish Embassy. This data is freely accessible to anyone on the internet and is owned
-      entirely by the Irish Government.
-    </p>
-    <table>
-      <thead>
-        <tr>
-          <th>Data</th>
-          <th>Source</th>
-          <th>Contains Personal Info?</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Visa application numbers and their decision status (approved / refused / pending)</td>
-          <td>ireland.ie (Irish Government official website)</td>
-          <td>No – numbers only, no names or contact details</td>
-        </tr>
-      </tbody>
-    </table>
-    <p>
-      The data file is published by the embassy and refreshed periodically. The app retrieves
-      this file directly from the official government URL each time it is used and does not
-      store a private copy on any server we control.
-    </p>
-  </div>
+  <h2>4. Data Storage</h2>
+  <p>
+    No user data is stored on our servers or on your device beyond what is needed
+    to display your search result within the current session. When you close the
+    App, no data is retained.
+  </p>
 
-  <!-- 4. Data We Do Not Collect -->
-  <div class="card" id="data-we-collect">
-    <h2><span class="icon">🚫</span> 4. Data We Do Not Collect</h2>
-    <p>We explicitly <strong>do not</strong> collect any of the following:</p>
-    <ul>
-      <li>Names, email addresses, phone numbers, or any other contact information</li>
-      <li>Passport numbers, date of birth, nationality, or immigration details</li>
-      <li>The application numbers you search for</li>
-      <li>Device identifiers, advertising IDs, or hardware information</li>
-      <li>Location data (precise or approximate)</li>
-      <li>Browsing history or cross-site tracking data</li>
-      <li>Photos, videos, contacts, or any other device content</li>
-      <li>Financial information of any kind</li>
-    </ul>
-    <div class="callout">
-      No personal data is ever sent to, or stored on, any server operated by this application.
-      All search activity happens exclusively within your browser session.
-    </div>
-  </div>
+  <h2>5. Third-Party Services</h2>
+  <p>The App uses the following third-party infrastructure:</p>
+  <ul>
+    <li>
+      <strong>HuggingFace Spaces</strong> — hosts our backend API server.
+      HuggingFace may log standard HTTP request metadata (IP address, timestamp,
+      request path) for operational purposes. See
+      <a href="https://huggingface.co/privacy" target="_blank">HuggingFace's Privacy Policy</a>.
+    </li>
+    <li>
+      <strong>ireland.ie</strong> — the source of all visa decision data. We only
+      read publicly available pages; we do not interact with ireland.ie on your behalf.
+    </li>
+  </ul>
+  <p>We do not integrate any advertising, social media, or analytics SDKs.</p>
 
-  <!-- 5. User Input -->
-  <div class="card" id="user-input">
-    <h2><span class="icon">🔍</span> 5. How Your Application Number Is Handled</h2>
-    <p>
-      When you type an application number into the search field, that number is processed
-      entirely within your device's browser. It is compared locally against the publicly
-      available government dataset that was already loaded into your session.
-    </p>
-    <p>
-      Your application number is <strong>never transmitted</strong> to any server, database,
-      or third party. It is not logged, cached externally, or retained in any way after your
-      browser session ends.
-    </p>
-  </div>
+  <h2>6. Children's Privacy</h2>
+  <p>
+    The App is not directed at children under the age of 13. We do not knowingly
+    collect any information from children.
+  </p>
 
-  <!-- 6. File Uploads -->
-  <div class="card" id="file-upload">
-    <h2><span class="icon">📁</span> 6. Optional File Uploads</h2>
-    <p>
-      The app includes an optional feature allowing you to manually upload an ODS or Excel (.xlsx)
-      file as a fallback when the automatic data fetch is unavailable.
-    </p>
-    <ul>
-      <li>Any file you upload is processed <strong>entirely within your active browser session</strong>.</li>
-      <li>The file is never transmitted to any server or external service.</li>
-      <li>The file is not stored, cached, or retained after your session ends.</li>
-      <li>We recommend only uploading files obtained from the official ireland.ie government website.</li>
-    </ul>
-  </div>
+  <h2>7. Changes to This Policy</h2>
+  <p>
+    We may update this Privacy Policy from time to time. Any changes will be
+    reflected on this page with an updated "Last updated" date. Continued use of
+    the App after changes constitutes acceptance of the revised policy.
+  </p>
 
-  <!-- 7. Hosting -->
-  <div class="card" id="hosting">
-    <h2><span class="icon">🌐</span> 7. Hosting &amp; Infrastructure</h2>
-    <p>
-      This application is hosted on <strong>GitHub Pages</strong>, a static website hosting
-      service provided by GitHub, Inc. (a subsidiary of Microsoft Corporation). When you visit
-      the application, GitHub's servers may automatically collect standard web server log data,
-      which may include:
-    </p>
-    <ul class="plain">
-      <li>Your IP address (handled by GitHub's infrastructure, not by us)</li>
-      <li>Browser type and version</li>
-      <li>Date and time of the request</li>
-      <li>The URL of the page requested</li>
-    </ul>
-    <p>
-      This data is collected and controlled by GitHub, not by us. We do not access, receive,
-      or store this server log data. For details on how GitHub handles this information, please
-      review the
-      <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>.
-    </p>
-  </div>
-
-  <!-- 8. Third-Party Services -->
-  <div class="card" id="third-party">
-    <h2><span class="icon">🔗</span> 8. Third-Party Services</h2>
-    <p>
-      The app makes direct HTTP requests to the following official Irish Government websites
-      to retrieve publicly available visa decision files. These are the only external network
-      requests initiated by the application:
-    </p>
-    <ul>
-      <li><a href="https://www.ireland.ie" target="_blank" rel="noopener noreferrer">ireland.ie</a> – Irish Embassy visa decision data (Abu Dhabi, Abuja, Ankara, Beijing, London, Moscow, New Delhi)</li>
-      <li><a href="https://www.irishimmigration.ie" target="_blank" rel="noopener noreferrer">irishimmigration.ie</a> – Irish Immigration Service visa decision data (South Africa, general decisions)</li>
-    </ul>
-    <p>
-      We do not integrate any of the following:
-    </p>
-    <ul>
-      <li>Advertising networks or ad SDKs</li>
-      <li>Analytics services (e.g., Google Analytics, Mixpanel, Firebase)</li>
-      <li>Social media tracking pixels or SDKs</li>
-      <li>Crash reporting or performance monitoring services</li>
-      <li>Payment processors</li>
-      <li>Authentication or identity providers</li>
-    </ul>
-    <div class="callout">
-      When the app fetches data from ireland.ie, the Irish Government's web server may log
-      your IP address as part of standard server logging. This is governed by the
-      <a href="https://www.ireland.ie/en/dfa/privacy-statement/" target="_blank" rel="noopener noreferrer">Ireland.ie Privacy Statement</a>,
-      not by this policy.
-    </div>
-  </div>
-
-  <!-- 9. Cookies -->
-  <div class="card" id="cookies">
-    <h2><span class="icon">🍪</span> 9. Cookies &amp; Tracking Technologies</h2>
-    <p>
-      This application does <strong>not</strong> use:
-    </p>
-    <ul>
-      <li>Cookies of any kind (session, persistent, or third-party)</li>
-      <li>Web beacons, pixels, or tracking tags</li>
-      <li>Browser fingerprinting techniques</li>
-      <li>Local storage or IndexedDB for user tracking</li>
-      <li>Cross-site tracking mechanisms</li>
-    </ul>
-    <p>
-      Your browser may use its own local cache to store the page for faster reloading. This
-      is standard browser behaviour outside our control and does not involve any tracking.
-    </p>
-  </div>
-
-  <!-- 10. Your Rights -->
-  <div class="card" id="your-rights">
-    <h2><span class="icon">⚖️</span> 10. Your Rights</h2>
-    <p>
-      Because we do not collect or store any personal data, there is no personal data of yours
-      held by us to access, correct, delete, or port. Nonetheless, we acknowledge the following
-      rights available to users under applicable data protection laws including GDPR and Indian
-      DPDP Act 2023:
-    </p>
-    <ul>
-      <li><strong>Right of access:</strong> You may request confirmation of what personal data we hold about you (none).</li>
-      <li><strong>Right to erasure:</strong> You may request deletion of your personal data (none is held).</li>
-      <li><strong>Right to data portability:</strong> You may request a copy of your personal data (none exists).</li>
-      <li><strong>Right to object:</strong> You may object to data processing (no processing occurs).</li>
-      <li><strong>Right to withdraw consent:</strong> You may withdraw any consent at any time (no consent was requested).</li>
-    </ul>
-    <p>
-      To exercise any of these rights or make an inquiry, please contact us using the details
-      in the <a href="#contact">Contact section</a> below.
-    </p>
-  </div>
-
-  <!-- 11. Children -->
-  <div class="card" id="children">
-    <h2><span class="icon">👶</span> 11. Children's Privacy</h2>
-    <p>
-      This application is a utility tool intended for visa applicants and is not directed at
-      or designed for children under the age of 13 (or the applicable age of digital consent
-      in your jurisdiction). We do not knowingly collect personal information from children.
-    </p>
-    <p>
-      If you believe a child has used this application in a manner that raises privacy concerns,
-      please contact us and we will respond promptly.
-    </p>
-  </div>
-
-  <!-- 12. Data Security -->
-  <div class="card" id="data-security">
-    <h2><span class="icon">🔒</span> 12. Data Security</h2>
-    <p>
-      Since the application does not collect or transmit any personal data, there is no personal
-      data at risk of breach on our end. The application is delivered over HTTPS, ensuring that
-      the connection between your browser and the hosting server is encrypted.
-    </p>
-    <p>
-      The source code for this application is publicly available on
-      <a href="https://github.com/shayshankr/QA_Testing_visa_application" target="_blank" rel="noopener noreferrer">GitHub</a>,
-      allowing full transparency into how data is handled.
-    </p>
-  </div>
-
-  <!-- 13. Changes -->
-  <div class="card" id="changes">
-    <h2><span class="icon">🔄</span> 13. Changes to This Privacy Policy</h2>
-    <p>
-      We may update this Privacy Policy from time to time to reflect changes in the application,
-      legal requirements, or best practices. When we make changes, we will update the
-      <strong>Effective Date</strong> at the top of this page.
-    </p>
-    <p>
-      Continued use of the application after any changes constitutes your acceptance of the
-      updated policy. We encourage you to review this policy periodically. This policy is
-      permanently hosted at:
-    </p>
-    <p>
-      <a href="https://shayshankr.github.io/ireland-visa-privacy/" target="_blank" rel="noopener noreferrer">
-        https://shayshankr.github.io/ireland-visa-privacy/
-      </a>
-    </p>
-  </div>
-
-  <!-- 14. Contact -->
-  <div class="card" id="contact">
-    <h2><span class="icon">✉️</span> 14. Contact Us</h2>
-    <p>
-      If you have any questions, concerns, or requests regarding this Privacy Policy or the
-      application's data practices, you may contact us through the following channels:
-    </p>
-    <ul>
-      <li>
-        <strong>GitHub Issues:</strong>
-        <a href="https://github.com/shayshankr/QA_Testing_visa_application/issues" target="_blank" rel="noopener noreferrer">
-          github.com/shayshankr/QA_Testing_visa_application/issues
-        </a>
-      </li>
-      <li>
-        <strong>GitHub Profile:</strong>
-        <a href="https://github.com/shayshankr" target="_blank" rel="noopener noreferrer">
-          github.com/shayshankr
-        </a>
-      </li>
-    </ul>
-    <p>We aim to respond to all privacy-related inquiries within 14 days.</p>
-    <div class="callout">
-      This application is an independent open-source project. It is not affiliated with,
-      endorsed by, or operated by the Irish Government, the Department of Foreign Affairs
-      Ireland, or any Irish Embassy or Consulate.
-    </div>
-  </div>
-
+  <h2>8. Contact</h2>
+  <p>
+    If you have any questions about this Privacy Policy, please contact us at:<br />
+    <a href="mailto:shayshankrathore@gmail.com">shayshankrathore@gmail.com</a>
+  </p>
 </main>
 
 <footer>
-  <p>&copy; 2025 Ireland Visa Status Checker &nbsp;·&nbsp; Open-source &nbsp;·&nbsp;
-  Data sourced from <a href="https://www.ireland.ie" target="_blank" rel="noopener">ireland.ie</a> (Irish Government)</p>
-  <p style="margin-top:6px;">Privacy Policy URL: <a href="https://shayshankr.github.io/ireland-visa-privacy/">https://shayshankr.github.io/ireland-visa-privacy/</a></p>
+  &copy; 2026 Shayshank Rathore &mdash; Ireland Visa Checker
 </footer>
 
 </body>
